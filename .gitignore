@@ -1,0 +1,73 @@
+# =====================================
+# AutoNIDS - Git Ignore
+# =====================================
+
+# Raw CICIDS2017 dataset
+data_raw/
+
+# Processed dataset files
+data_processed/*.csv
+data_processed/*.parquet
+data_processed/*.pkl
+
+# Dataset archives
+*.zip
+*.7z
+*.rar
+
+# Machine Learning model files
+*.joblib
+*.h5
+*.keras
+*.pt
+*.pth
+*.onnx
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# IDE settings
+.vscode/
+.idea/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+
+# Build and distribution
+build/
+dist/
+*.egg-info/
+
+# Test and coverage files
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Large generated outputs
+outputs/

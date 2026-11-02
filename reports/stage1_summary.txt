@@ -1,0 +1,173 @@
+========================================================================
+AutoNIDS â€“ Stage 1: Dataset Discovery & Data-Quality Audit
+Generated: 2026-10-12 19:29:33
+========================================================================
+
+[1] FILE INVENTORY
+
+File                                                      MB       Rows   Cols     Dups    Inf+    Inf-
+-------------------------------------------------------------------------------------------------------
+Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv      73.551    225,745     79    2,633      64       0
+Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.cs   73.343    286,467     79   72,353     727       0
+Friday-WorkingHours-Morning.pcap_ISCX.csv             55.615    191,033     79    6,888     216       0
+Monday-WorkingHours.pcap_ISCX.csv                    168.732    529,918     79   26,935     810       0
+Thursday-WorkingHours-Afternoon-Infilteration.pcap_   79.253    288,602     79   35,630     396       0
+Thursday-WorkingHours-Morning-WebAttacks.pcap_ISCX.   49.613    170,366     79    6,066     250       0
+Tuesday-WorkingHours.pcap_ISCX.csv                   128.821    445,909     79   24,065     327       0
+Wednesday-workingHours.pcap_ISCX.csv                 214.735    692,703     79   81,909    1586       0
+
+
+[2] LABEL DISTRIBUTIONS
+
+  Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv
+    DDoS                                        128,027  (56.71%)
+    BENIGN                                       97,718  (43.29%) â† BENIGN
+
+  Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv
+    PortScan                                    158,930  (55.48%)
+    BENIGN                                      127,537  (44.52%) â† BENIGN
+
+  Friday-WorkingHours-Morning.pcap_ISCX.csv
+    BENIGN                                      189,067  (98.97%) â† BENIGN
+    Bot                                           1,966  ( 1.03%)
+
+  Monday-WorkingHours.pcap_ISCX.csv
+    BENIGN                                      529,918  (100.00%) â† BENIGN
+
+  Thursday-WorkingHours-Afternoon-Infilteration.pcap_ISCX.csv
+    BENIGN                                      288,566  (99.99%) â† BENIGN
+    Infiltration                                     36  ( 0.01%)
+
+  Thursday-WorkingHours-Morning-WebAttacks.pcap_ISCX.csv
+    BENIGN                                      168,186  (98.72%) â† BENIGN
+    Web Attack � Brute Force                      1,507  ( 0.88%)
+    Web Attack � XSS                                652  ( 0.38%)
+    Web Attack � Sql Injection                       21  ( 0.01%)
+
+  Tuesday-WorkingHours.pcap_ISCX.csv
+    BENIGN                                      432,074  (96.90%) â† BENIGN
+    FTP-Patator                                   7,938  ( 1.78%)
+    SSH-Patator                                   5,897  ( 1.32%)
+
+  Wednesday-workingHours.pcap_ISCX.csv
+    BENIGN                                      440,031  (63.52%) â† BENIGN
+    DoS Hulk                                    231,073  (33.36%)
+    DoS GoldenEye                                10,293  ( 1.49%)
+    DoS slowloris                                 5,796  ( 0.84%)
+    DoS Slowhttptest                              5,499  ( 0.79%)
+    Heartbleed                                       11  ( 0.00%)
+
+
+[3] DATA QUALITY SUMMARY
+
+  Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv
+    Missing cells    : 4  in 1 columns
+    +Inf / -Inf cells: 64 / 0
+    Cols with Inf    : ['Flow Bytes/s', ' Flow Packets/s']
+    Duplicate rows   : 2,633
+    Constant cols    : [' Bwd PSH Flags', ' Fwd URG Flags', ' Bwd URG Flags', ' CWE Flag Count', 'Fwd Avg Bytes/Bulk', ' Fwd Avg Packets/Bulk', ' Fwd Avg Bulk Rate', ' Bwd Avg Bytes/Bulk', ' Bwd Avg Packets/Bulk', 'Bwd Avg Bulk Rate']
+    All-NaN cols     : []
+
+  Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv
+    Missing cells    : 15  in 1 columns
+    +Inf / -Inf cells: 727 / 0
+    Cols with Inf    : ['Flow Bytes/s', ' Flow Packets/s']
+    Duplicate rows   : 72,353
+    Constant cols    : [' Bwd PSH Flags', ' Fwd URG Flags', ' Bwd URG Flags', ' CWE Flag Count', 'Fwd Avg Bytes/Bulk', ' Fwd Avg Packets/Bulk', ' Fwd Avg Bulk Rate', ' Bwd Avg Bytes/Bulk', ' Bwd Avg Packets/Bulk', 'Bwd Avg Bulk Rate']
+    All-NaN cols     : []
+
+  Friday-WorkingHours-Morning.pcap_ISCX.csv
+    Missing cells    : 28  in 1 columns
+    +Inf / -Inf cells: 216 / 0
+    Cols with Inf    : ['Flow Bytes/s', ' Flow Packets/s']
+    Duplicate rows   : 6,888
+    Constant cols    : [' Bwd PSH Flags', ' Fwd URG Flags', ' Bwd URG Flags', ' CWE Flag Count', 'Fwd Avg Bytes/Bulk', ' Fwd Avg Packets/Bulk', ' Fwd Avg Bulk Rate', ' Bwd Avg Bytes/Bulk', ' Bwd Avg Packets/Bulk', 'Bwd Avg Bulk Rate']
+    All-NaN cols     : []
+
+  Monday-WorkingHours.pcap_ISCX.csv
+    Missing cells    : 64  in 1 columns
+    +Inf / -Inf cells: 810 / 0
+    Cols with Inf    : ['Flow Bytes/s', ' Flow Packets/s']
+    Duplicate rows   : 26,935
+    Constant cols    : [' Bwd PSH Flags', ' Fwd URG Flags', ' Bwd URG Flags', ' CWE Flag Count', 'Fwd Avg Bytes/Bulk', ' Fwd Avg Packets/Bulk', ' Fwd Avg Bulk Rate', ' Bwd Avg Bytes/Bulk', ' Bwd Avg Packets/Bulk', 'Bwd Avg Bulk Rate']
+    All-NaN cols     : []
+
+  Thursday-WorkingHours-Afternoon-Infilteration.pcap_ISCX.csv
+    Missing cells    : 18  in 1 columns
+    +Inf / -Inf cells: 396 / 0
+    Cols with Inf    : ['Flow Bytes/s', ' Flow Packets/s']
+    Duplicate rows   : 35,630
+    Constant cols    : [' Bwd PSH Flags', ' Bwd URG Flags', 'Fwd Avg Bytes/Bulk', ' Fwd Avg Packets/Bulk', ' Fwd Avg Bulk Rate', ' Bwd Avg Bytes/Bulk', ' Bwd Avg Packets/Bulk', 'Bwd Avg Bulk Rate']
+    All-NaN cols     : []
+
+  Thursday-WorkingHours-Morning-WebAttacks.pcap_ISCX.csv
+    Missing cells    : 20  in 1 columns
+    +Inf / -Inf cells: 250 / 0
+    Cols with Inf    : ['Flow Bytes/s', ' Flow Packets/s']
+    Duplicate rows   : 6,066
+    Constant cols    : [' Bwd PSH Flags', ' Fwd URG Flags', ' Bwd URG Flags', ' CWE Flag Count', 'Fwd Avg Bytes/Bulk', ' Fwd Avg Packets/Bulk', ' Fwd Avg Bulk Rate', ' Bwd Avg Bytes/Bulk', ' Bwd Avg Packets/Bulk', 'Bwd Avg Bulk Rate']
+    All-NaN cols     : []
+
+  Tuesday-WorkingHours.pcap_ISCX.csv
+    Missing cells    : 201  in 1 columns
+    +Inf / -Inf cells: 327 / 0
+    Cols with Inf    : ['Flow Bytes/s', ' Flow Packets/s']
+    Duplicate rows   : 24,065
+    Constant cols    : [' Bwd PSH Flags', ' Fwd URG Flags', ' Bwd URG Flags', ' CWE Flag Count', 'Fwd Avg Bytes/Bulk', ' Fwd Avg Packets/Bulk', ' Fwd Avg Bulk Rate', ' Bwd Avg Bytes/Bulk', ' Bwd Avg Packets/Bulk', 'Bwd Avg Bulk Rate']
+    All-NaN cols     : []
+
+  Wednesday-workingHours.pcap_ISCX.csv
+    Missing cells    : 1,008  in 1 columns
+    +Inf / -Inf cells: 1,586 / 0
+    Cols with Inf    : ['Flow Bytes/s', ' Flow Packets/s']
+    Duplicate rows   : 81,909
+    Constant cols    : [' Bwd PSH Flags', ' Fwd URG Flags', ' Bwd URG Flags', ' CWE Flag Count', 'Fwd Avg Bytes/Bulk', ' Fwd Avg Packets/Bulk', ' Fwd Avg Bulk Rate', ' Bwd Avg Bytes/Bulk', ' Bwd Avg Packets/Bulk', 'Bwd Avg Bulk Rate']
+    All-NaN cols     : []
+
+
+[4] POTENTIAL SHORTCUT / LEAKAGE COLUMNS
+
+  Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv
+    [' Destination Port', 'Idle Mean', ' Idle Std', ' Idle Max', ' Idle Min']
+
+  Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv
+    [' Destination Port', 'Idle Mean', ' Idle Std', ' Idle Max', ' Idle Min']
+
+  Friday-WorkingHours-Morning.pcap_ISCX.csv
+    [' Destination Port', 'Idle Mean', ' Idle Std', ' Idle Max', ' Idle Min']
+
+  Monday-WorkingHours.pcap_ISCX.csv
+    [' Destination Port', 'Idle Mean', ' Idle Std', ' Idle Max', ' Idle Min']
+
+  Thursday-WorkingHours-Afternoon-Infilteration.pcap_ISCX.csv
+    [' Destination Port', 'Idle Mean', ' Idle Std', ' Idle Max', ' Idle Min']
+
+  Thursday-WorkingHours-Morning-WebAttacks.pcap_ISCX.csv
+    [' Destination Port', 'Idle Mean', ' Idle Std', ' Idle Max', ' Idle Min']
+
+  Tuesday-WorkingHours.pcap_ISCX.csv
+    [' Destination Port', 'Idle Mean', ' Idle Std', ' Idle Max', ' Idle Min']
+
+  Wednesday-workingHours.pcap_ISCX.csv
+    [' Destination Port', 'Idle Mean', ' Idle Std', ' Idle Max', ' Idle Min']
+
+
+[5] CROSS-FILE SCHEMA CONSISTENCY
+
+  Total unique columns (union):   79
+  Columns in ALL files:           79
+  All files share the same column schema. âœ“
+
+  Per-file column counts:
+    Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv        79
+    Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv    79
+    Friday-WorkingHours-Morning.pcap_ISCX.csv               79
+    Monday-WorkingHours.pcap_ISCX.csv                       79
+    Thursday-WorkingHours-Afternoon-Infilteration.pcap_ISCX.csv 79
+    Thursday-WorkingHours-Morning-WebAttacks.pcap_ISCX.csv  79
+    Tuesday-WorkingHours.pcap_ISCX.csv                      79
+    Wednesday-workingHours.pcap_ISCX.csv                    79
+
+========================================================================
+END OF REPORT
+========================================================================
