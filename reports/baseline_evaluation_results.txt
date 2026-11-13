@@ -1,0 +1,31 @@
+
+================================================================================
+AUTONIDS - ISOLATION FOREST BASELINE EVALUATION REPORT
+================================================================================
+Experiment Date : 2026-11-14
+Model Type      : Isolation Forest (White-Box Pure NumPy Implementation)
+Training Set    : Monday-WorkingHours.cleaned.csv (63,364 pure BENIGN flows)
+Evaluation Set  : Friday-WorkingHours-Afternoon-DDos.cleaned.csv (100,000 flows)
+
+--------------------------------------------------------------------------------
+CONFUSION MATRIX
+--------------------------------------------------------------------------------
+                  Predicted Normal (0)    Predicted Attack (1)
+Actual Normal (0)         25,010 (TN)                13,796 (FP)
+Actual Attack (1)         19,990 (FN)                41,204 (TP)
+
+--------------------------------------------------------------------------------
+KEY EVALUATION METRICS
+--------------------------------------------------------------------------------
+Accuracy               : 66.21%
+Attack Detection Recall: 67.33%  (Proportion of actual DDoS attacks caught)
+Attack Precision       : 74.92%  (Proportion of predicted attacks that were true)
+F1-Score               : 0.7092
+False Positive Rate    : 35.55%  (Normal traffic falsely flagged as attacks)
+
+--------------------------------------------------------------------------------
+SYSTEM EFFICIENCY & THROUGHPUT
+--------------------------------------------------------------------------------
+Training Duration      : 2.50 seconds
+Prediction Throughput  : 49,995 flows / second
+================================================================================

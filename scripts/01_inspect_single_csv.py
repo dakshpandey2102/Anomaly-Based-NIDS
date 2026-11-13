@@ -16,7 +16,7 @@ At any given moment, only a single row string resides in RAM.
 This guarantees O(1) auxiliary memory consumption regardless of file size.
 """
 
-import csv
+import csv  
 import math
 from collections import Counter, defaultdict
 from pathlib import Path
