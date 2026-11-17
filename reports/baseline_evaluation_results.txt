@@ -26,6 +26,6 @@ False Positive Rate    : 35.55%  (Normal traffic falsely flagged as attacks)
 --------------------------------------------------------------------------------
 SYSTEM EFFICIENCY & THROUGHPUT
 --------------------------------------------------------------------------------
-Training Duration      : 2.50 seconds
-Prediction Throughput  : 49,995 flows / second
+Training Duration      : 1.23 seconds
+Prediction Throughput  : 89,338 flows / second
 ================================================================================
